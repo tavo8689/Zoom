@@ -1,0 +1,31 @@
+h1{color: #f00;}
+
+.card{
+    --size:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--size);
+    height: var(--size);
+    background: linear-gradient(blueviolet,blue);
+    border: 1px solid #000;
+    box-shadow: 5px 5px 15px #0006;
+    border-radius: 25px;
+    text-shadow: 0 0 5px #0009;
+}
+
+.card img{
+    border: 15px solid #fff;
+    max-width: 90%;
+    box-sizing: border-box;
+    object-view-box: inset(0);
+    transition: 0.75s;
+    filter: grayscale(100%);
+}
+
+.card img:hover{
+    object-view-box: inset(45%);
+    object-position: -125px 29px;
+    transform: rotate(6deg);
+    filter: grayscale(0%);
+}
